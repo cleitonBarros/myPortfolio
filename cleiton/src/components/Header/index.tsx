@@ -1,19 +1,13 @@
-import { Logo, Nav} from "./style";
-
-
+import { Logo, Header_, Menu} from "./style";
 
 
 export default function Header(){
     function turn(){
         document.querySelector('svg')?.classList.toggle('click')
-        document.querySelector('.navigation')?.classList.toggle('open-nav')
-        document.querySelector('.menu-bg')?.classList.toggle('open-nav')
-        document.querySelector('#main')?.classList.toggle('main-move')
     }
     return(
-        <header>
-            <Nav>
-                <Logo onClick={turn} id="logo">
+        <Header_>
+            <Logo onClick={turn} id="logo">
                     <svg x="0px" y="0px" width="50px" height="44px" cx="50" cy="50" viewBox="0 -3 50 50">
                     <defs></defs>
                     <g>
@@ -34,8 +28,38 @@ export default function Header(){
                         C35.1,10.8,34.9,10.5,34.6,10.5z"/>
                     </g>
                 </svg>
-                </Logo>
-            </Nav>
-        </header>
+            </Logo>
+            <Menu>
+
+                <ul>
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+                </ul>
+            </Menu>
+        </Header_>
     )
 }

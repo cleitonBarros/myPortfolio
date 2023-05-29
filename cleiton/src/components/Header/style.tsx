@@ -1,33 +1,27 @@
 import styled from "styled-components"
 
-export const Nav = styled.nav`
-    width: 5rem;
-    height: 100vh;
-
-    background-color: #fff;
-    border-right: 1px solid #f0f0f0;
-
-    position: fixed;
-    left: 0;
-    z-index: 9999;
-
-    @media (max-width: 600px) {
-  
-        width: 100%;
-        height: 80px;
-        background: #fff;
-        position: fixed;
-        left: 0;
-        border-right: 0 solid #f0f0f0;
-        z-index: 9999;
-   
-    }
-`
-export const Logo = styled.div`
-    display: block;
-    cursor: pointer;
-    margin: 47vh 0;
+export const Header_ = styled.header`
     
+    padding: 2rem 2rem;
+    background-color: #6363c7;
+    display: flex;
+    align-items: center;
+     
+`
+export const Menu = styled.div`
+    //display: none;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    margin-top:8.4rem ;
+    top: 0px;
+    left: 0;
+    background-color: #d67d7d;
+    
+
+
+`
+export const Logo = styled.div` 
     svg{
         display: block;
         margin: 0 auto;
@@ -144,12 +138,5 @@ export const Logo = styled.div`
     animation: undash 0.4s forwards linear;
     }
 
-    @media (max-width: 600px) {
-        margin: 0;
   
-    svg {
-        margin: 17px;
-    }  
-    
-}
 `
