@@ -1,4 +1,4 @@
-import { Logo, Nav, Navigation, MenuBg} from "./style";
+import { Logo, Nav} from "./style";
 
 
 
@@ -36,12 +36,6 @@ export default function Header(){
                 </svg>
                 </Logo>
             </Nav>
-            <Navigation className="navigation">
-                
-                
-            </Navigation>
-            <MenuBg className="menu-bg"></MenuBg>
-
         </header>
     )
 }

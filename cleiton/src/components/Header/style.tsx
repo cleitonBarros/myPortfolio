@@ -152,25 +152,4 @@ export const Logo = styled.div`
     }  
     
 }
-
-`
-export const Navigation  = styled.div`
-  
-   
-`
-
-export const MenuBg = styled.div`
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0);
-    z-index: 11;
-    transition: 0.5s all ease-in-out;
-
-    .open-nav + &.menu-bg {
-        display: block;
-        background: rgba(0, 0, 0, 0.5);
-        transition: 0.3s all ease-in-out;
-    }
 `
