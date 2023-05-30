@@ -6,14 +6,18 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
   }
   :root{
     font-size: 62.5%;
   }
-
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
   .container{
     max-width: 1024px;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow: hidden;
   }
   @keyframes undash {
     0% {

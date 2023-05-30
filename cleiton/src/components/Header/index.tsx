@@ -1,14 +1,18 @@
-import { Logo, Header_, Menu} from "./style";
+import { Logo, Header_, Menu, Box} from "./style";
+import { Code, EnvelopeSimple, IdentificationCard, PenNib } from "@phosphor-icons/react"
 
 
 export default function Header(){
-    function turn(){
+    
+
+    function showMenuMobile(){
         document.querySelector('svg')?.classList.toggle('click')
+        document.querySelector('#menu')?.classList.toggle('open-menu')
     }
     return(
         <Header_>
-            <Logo onClick={turn} id="logo">
-                    <svg x="0px" y="0px" width="50px" height="44px" cx="50" cy="50" viewBox="0 -3 50 50">
+            <Logo onClick={showMenuMobile}  id="logo">
+                    <svg  x="0px" y="0px" width="50px" height="44px" cx="50" cy="50" viewBox="0 -3 50 50">
                     <defs></defs>
                     <g>
                         <g className="lines">
@@ -29,36 +33,34 @@ export default function Header(){
                     </g>
                 </svg>
             </Logo>
-            <Menu>
+            <Menu id="menu">
+                <Box>
+                    <ul>
+                        <li  >
+                            <IdentificationCard size={40} />
+                            <a href="#">Quem sou</a>
+                        </li>
+                        <li >
+                            <Code size={40} />
+                            <a href="#">Tecnologia</a>
+                        </li>
+                        <li>
+                            <PenNib size={40} />
+                            <a href="#">Projetos</a>
+                        </li>
+                        <li>
+                            <EnvelopeSimple size={40} />
+                            <a href="#">Contato</a>
+                        </li>
 
-                <ul>
-                    <li>
-                        <a href="">
-                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            
-                        </a>
-                    </li>
+                    </ul>
+                </Box>
+                <Box>
 
-                    <li>
-                        <a href="">
-                            
-                        </a>
-                    </li>
-                </ul>
+                    <a id="cv" href="">Curriculo</a>
+                </Box>
+
+                
             </Menu>
         </Header_>
     )

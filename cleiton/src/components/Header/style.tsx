@@ -1,25 +1,37 @@
 import styled from "styled-components"
 
 export const Header_ = styled.header`
-    
+    transition: left 0.5s linear;
+	position: fixed;
+    width: 1024px;
     padding: 2rem 2rem;
-    background-color: #6363c7;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
+    
      
 `
 export const Menu = styled.div`
-    //display: none;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     width: 100%;
-    min-height: 100vh;
+    left: -100%;
+    min-width: 375px;
+    height: 100vh;
     margin-top:8.4rem ;
     top: 0px;
-    left: 0;
-    background-color: #d67d7d;
+    background-color: #ffffff;
+    transition: all .5s ease-in-out;
     
 
+    &.open-menu{
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        transition: all .7 ease-in-out;
 
+    }
 `
 export const Logo = styled.div` 
     svg{
@@ -140,3 +152,46 @@ export const Logo = styled.div`
 
   
 `
+export const Box =  styled.div`
+    margin: 0 auto;
+    padding: 8rem 5rem 0 ;
+    width: 44rem;
+    display: flex;
+    justify-content:center;
+    font-size: 3rem;
+    font-weight: 400;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5rem;
+        width: fit-content;
+       
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 29rem;
+        height: 5rem;
+        cursor: pointer;
+
+    }
+    
+    a{
+        color: #000;
+        letter-spacing: 3px;
+
+        &#cv{
+            font-size: 2rem ;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            background: #000;
+            color: #fff;
+        }
+    }
+    `
