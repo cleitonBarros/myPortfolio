@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
   .container{
-    max-width: 1024px;
+    max-width: 102.4rem;
     margin: 0 auto;
     overflow: hidden;
   }
