@@ -15,7 +15,7 @@ export const Container = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
- 
+
   outline: none;
   z-index: 1;
 
@@ -27,7 +27,7 @@ export const Container = styled.button`
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.rem;
+    border-radius: 0rem;
     background-color: #491a37;
     background-image: linear-gradient(315deg, #ffa1d3 0%, #572246 74%);
     transition: all 0.3s ease;

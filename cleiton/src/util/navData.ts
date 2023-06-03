@@ -1,9 +1,9 @@
 import {
-    Code,
-    EnvelopeSimple,
-    IdentificationCard,
-    PenNib,
-  } from "@phosphor-icons/react";
+  Code,
+  EnvelopeSimple,
+  IdentificationCard,
+  PenNib,
+} from "@phosphor-icons/react";
 
 export const NavData = [
   {
@@ -22,7 +22,7 @@ export const NavData = [
     Path: "#",
   },
   {
-    icon:  EnvelopeSimple,
+    icon: EnvelopeSimple,
     title: "Contato",
     Path: "#",
   },

@@ -1,6 +1,6 @@
-import * as S from "./styles";
 import { NavData } from "../../util/navData";
 import { Button } from "../Button";
+import * as S from "./styles";
 export function Nav() {
   function showMenuMobile() {
     document.querySelector("svg")?.classList.toggle("click");
@@ -76,7 +76,9 @@ export function Nav() {
           ))}
         </S.Navbar>
 
-        <Button><span>Curriculo</span></Button>
+        <Button>
+          <span>Curriculo</span>
+        </Button>
 
         <S.Menu id="menu">
           <S.Box>

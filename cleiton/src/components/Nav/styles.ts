@@ -98,7 +98,6 @@ export const Logo = styled.div`
   svg {
     margin: 0 auto;
     cursor: pointer;
-    
   }
 
   @media (max-width: 600px) {

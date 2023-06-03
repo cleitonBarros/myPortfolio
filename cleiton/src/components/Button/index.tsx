@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import * as S from "./styles";
 
 type ButtonProps = {
@@ -6,5 +7,5 @@ type ButtonProps = {
 };
 
 export function Button({ children }: ButtonProps) {
-  return <S.Container >{children}</S.Container>;
+  return <S.Container>{children}</S.Container>;
 }
