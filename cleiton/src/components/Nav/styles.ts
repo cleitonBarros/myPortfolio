@@ -67,7 +67,6 @@ export const Navbar = styled.ul`
     visibility: visible;
   }
 `;
-
 export const Menu = styled.div`
   opacity: 0;
   visibility: hidden;
@@ -100,14 +99,6 @@ export const Logo = styled.div`
     margin: 0 auto;
     cursor: pointer;
     
-  }
-  g {
-    stroke: #d9042b;
-    fill: #d9042b;
-  }
-  line{
-    stroke: transparent ;
-    fill: transparent;
   }
 
   @media (max-width: 600px) {
@@ -213,11 +204,11 @@ export const Logo = styled.div`
       animation-delay: 0.15s;
     }
     g {
-      stroke: #d9042b;
-      fill: #d9042b;
+      stroke: #000000;
+      fill: #000000;
     }
     line {
-      stroke: #d9042b;
+      stroke: #000000;
       stroke-width: 4;
       stroke-linecap: round;
       stroke-miterlimit: 10;
